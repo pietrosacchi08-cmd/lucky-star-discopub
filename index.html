@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Star Disco Pub Milano | Karaoke & Disco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-purple': '#a855f7',
+                        'neon-fuchsia': '#d946ef',
+                        'neon-cyan': '#22d3ee',
+                    },
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #09090b; /* bg-zinc-950 */
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .glow-purple {
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+        }
+        .glow-fuchsia {
+            box-shadow: 0 0 15px rgba(217, 70, 239, 0.4);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+        }
+        .text-glow-purple {
+            text-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+        }
+        .bg-cyber {
+            background-image: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+                              linear-gradient(rgba(9, 9, 11, 0.8), rgba(9, 9, 11, 0.8)),
+                              url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <header class="fixed w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-orbitron font-bold tracking-tighter">
+                <span class="bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">LUCKY STAR</span> ⭐
+            </div>
+            
+            <!-- Desktop Links -->
+            <ul class="hidden md:flex space-x-8 items-center text-sm font-semibold uppercase tracking-wider">
+                <li><a href="#chi-siamo" class="hover:text-purple-400 transition-colors">Chi Siamo</a></li>
+                <li><a href="#eventi" class="hover:text-purple-400 transition-colors">Eventi</a></li>
+                <li><a href="#recensioni" class="hover:text-purple-400 transition-colors">Recensioni</a></li>
+                <li><a href="#contatti" class="hover:text-purple-400 transition-colors">Contatti</a></li>
+                <li>
+                    <a href="https://luckystardiscopub.it" target="_blank" class="px-5 py-2 bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-full hover:scale-105 transition-transform shadow-purple-500/50 glow-purple">
+                        Vedi Menu
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Toggle -->
+            <button id="menu-toggle" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 py-6 px-6">
+            <ul class="flex flex-col space-y-4 text-center text-sm font-semibold uppercase tracking-wider">
+                <li><a href="#chi-siamo" class="block py-2">Chi Siamo</a></li>
+                <li><a href="#eventi" class="block py-2">Eventi</a></li>
+                <li><a href="#recensioni" class="block py-2">Recensioni</a></li>
+                <li><a href="#contatti" class="block py-2">Contatti</a></li>
+                <li>
+                    <a href="https://luckystardiscopub.it" target="_blank" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-full">
+                        Vedi Menu
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 md:pt-48 md:pb-32 flex flex-col items-center justify-center text-center px-6 bg-cyber overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px] -z-10"></div>
+        
+        <div class="mb-6 inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
+            <span class="flex h-2 w-2 rounded-full bg-purple-500 animate-ping"></span>
+            <span class="text-xs font-bold uppercase tracking-widest text-purple-400">✨ Locale Completamente Rinnovato</span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-orbitron font-bold mb-6 tracking-tighter leading-tight">
+            <span class="bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 bg-clip-text text-transparent">
+                Lucky Star <br class="hidden md:block"> Disco Pub
+            </span>
+        </h1>
+
+        <p class="text-zinc-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+            Il Karaoke migliore di Milano. Impianto audio da concerto, drink di qualità e divertimento fino alle 03:00.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-4">
+            <button class="px-8 py-4 bg-gradient-to-r from-purple-600 to-fuchsia-600 font-bold uppercase tracking-widest rounded-lg hover:scale-105 transition-all shadow-purple-500/50 glow-fuchsia">
+                Prenota una Sala Privata
+            </button>
+            <a href="https://luckystardiscopub.it" target="_blank" class="px-8 py-4 border border-zinc-700 hover:bg-white hover:text-black font-bold uppercase tracking-widest rounded-lg transition-all">
+                Sfoglia il Menu
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="chi-siamo" class="py-24 bg-zinc-950">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-purple-500/50 transition-colors group">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-purple-500/10 flex items-center justify-center text-2xl text-purple-500 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Impianto Audio Top</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Sperimenta il karaoke con un impianto audio professionale da concerto. Ogni nota risuona con chiarezza cristallina e potenza pura.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-fuchsia-500/50 transition-colors group">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-fuchsia-500/10 flex items-center justify-center text-2xl text-fuchsia-500 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Lucky Star Factory</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Partecipa al nostro talent-show canoro annuale. Mostra il tuo talento a Milano e vinci fantastici premi sotto i riflettori.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-cyan-500/50 transition-colors group">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-cyan-500/10 flex items-center justify-center text-2xl text-cyan-500 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-cocktail"></i>
+                    </div>
+                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Drink di Alta Qualità</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Cocktail premium preparati dai nostri mixologist. Qualità superiore a prezzi accessibili per rinfrescare le tue serate (10-20€).
+                    </p>
+                </div>
+                <!-- Card 4 -->
+                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-zinc-500 transition-colors group">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-zinc-500/10 flex items-center justify-center text-2xl text-zinc-400 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Sale Private & Relax</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Ampio patio esterno, comodi divanetti e salette private per festeggiare i tuoi eventi speciali in totale privacy e comfort.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="recensioni" class="py-24 border-y border-zinc-900 bg-zinc-900/20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-orbitron font-bold text-center mb-16 uppercase tracking-tighter">
+                Cosa dicono i <span class="text-purple-500">nostri clienti</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 relative overflow-hidden">
+                    <div class="flex text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-zinc-300 italic mb-6">
+                        "La Lucky Star Factory è un'esperienza pazzesca! Ho partecipato alla gara canora e l'atmosfera era elettrizzante. Staff gentilissimo!"
+                    </p>
+                    <div class="font-bold font-orbitron text-purple-400">— Francesca C.</div>
+                </div>
+                <!-- Review 2 -->
+                <div class="p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800">
+                    <div class="flex text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-zinc-300 italic mb-6">
+                        "Locale rinnovato stupendo! Abbiamo prenotato una sala privata per un compleanno e ci siamo divertiti tantissimo. I drink sono ottimi."
+                    </p>
+                    <div class="font-bold font-orbitron text-fuchsia-400">— Gaia R.</div>
+                </div>
+                <!-- Review 3 -->
+                <div class="p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800">
+                    <div class="flex text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-zinc-300 italic mb-6">
+                        "L'impianto karaoke è il migliore che abbia mai provato. Luci LED pazzesche e le sale private offrono la giusta intimità. Consigliatissimo!"
+                    </p>
+                    <div class="font-bold font-orbitron text-cyan-400">— Sara V.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contatti" class="py-20 bg-zinc-950 border-t border-zinc-900">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+                <!-- Col 1 -->
+                <div>
+                    <h4 class="text-lg font-orbitron font-bold text-white mb-6 uppercase tracking-wider">Dove Siamo</h4>
+                    <p class="text-zinc-500 text-sm leading-relaxed mb-2">
+                        Via Pellegrino Rossi, 93<br>
+                        20161 Milano MI
+                    </p>
+                    <p class="text-xs text-purple-500 font-bold uppercase tracking-widest">
+                        <i class="fas fa-parking mr-2"></i> Parcheggio in strada gratuito
+                    </p>
+                </div>
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-lg font-orbitron font-bold text-white mb-6 uppercase tracking-wider">Orari</h4>
+                    <p class="text-zinc-500 text-sm mb-2">Aperto tutte le sere</p>
+                    <p class="text-zinc-500 text-sm mb-4">Chiusura alle 03:00</p>
+                    <p class="text-xs text-cyan-500 font-bold uppercase tracking-widest">
+                        <i class="fas fa-wheelchair mr-2"></i> Accessibile in sedia a rotelle
+                    </p>
+                </div>
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-lg font-orbitron font-bold text-white mb-6 uppercase tracking-wider">Prenotazioni</h4>
+                    <p class="text-zinc-500 text-sm mb-6">Contattaci per riservare il tuo tavolo o una delle nostre esclusive sale private.</p>
+                    <a href="tel:3482613029" class="text-2xl font-bold font-orbitron text-fuchsia-500 hover:text-fuchsia-400 transition-colors">
+                        348 261 3029
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-20 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-xs text-zinc-600 uppercase tracking-widest">
+                <p>&copy; 2026 Lucky Star Disco Pub Milano. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                    <a href="#" class="hover:text-white transition-colors">Facebook</a>
+                    <a href="#" class="hover:text-white transition-colors">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-zinc-950/95', 'py-2');
+                header.classList.remove('bg-zinc-950/80', 'py-4');
+            } else {
+                header.classList.remove('bg-zinc-950/95', 'py-2');
+                header.classList.add('bg-zinc-950/80', 'py-4');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
