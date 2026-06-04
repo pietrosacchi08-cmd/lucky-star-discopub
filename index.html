@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Star Disco Pub Milano | Karaoke & Disco</title>
+    <title>Lucky Star Disco Pub Milano | Karaoke & Party</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -44,10 +44,8 @@
         }
         .bg-cyber {
             background-image: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
-                              linear-gradient(rgba(9, 9, 11, 0.85), rgba(9, 9, 11, 0.85)),
-                              url('https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
+                              linear-gradient(rgba(9, 9, 11, 0.8), rgba(9, 9, 11, 0.8)),
+                              url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
         }
     </style>
 </head>
@@ -62,10 +60,10 @@
             
             <!-- Desktop Links -->
             <ul class="hidden md:flex space-x-8 items-center text-sm font-semibold uppercase tracking-wider">
-                <li><a href="#chi-siamo" class="hover:text-purple-400 transition-colors">Chi Siamo</a></li>
-                <li><a href="#eventi" class="hover:text-purple-400 transition-colors">Eventi</a></li>
-                <li><a href="#recensioni" class="hover:text-purple-400 transition-colors">Recensioni</a></li>
-                <li><a href="#contatti" class="hover:text-purple-400 transition-colors">Contatti</a></li>
+                <li><a href="#chi-siamo" class="hover:text-purple-400 transition-colors text-zinc-300">Chi Siamo</a></li>
+                <li><a href="#servizi" class="hover:text-purple-400 transition-colors text-zinc-300">Servizi</a></li>
+                <li><a href="#recensioni" class="hover:text-purple-400 transition-colors text-zinc-300">Recensioni</a></li>
+                <li><a href="#contatti" class="hover:text-purple-400 transition-colors text-zinc-300">Contatti</a></li>
                 <li>
                     <a href="https://luckystardiscopub.it" target="_blank" class="px-5 py-2 bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-full hover:scale-105 transition-transform shadow-purple-500/50 glow-purple">
                         Vedi Menu
@@ -82,10 +80,10 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 py-6 px-6">
             <ul class="flex flex-col space-y-4 text-center text-sm font-semibold uppercase tracking-wider">
-                <li><a href="#chi-siamo" class="block py-2">Chi Siamo</a></li>
-                <li><a href="#eventi" class="block py-2">Eventi</a></li>
-                <li><a href="#recensioni" class="block py-2">Recensioni</a></li>
-                <li><a href="#contatti" class="block py-2">Contatti</a></li>
+                <li><a href="#chi-siamo" class="block py-2 text-zinc-300">Chi Siamo</a></li>
+                <li><a href="#servizi" class="block py-2 text-zinc-300">Servizi</a></li>
+                <li><a href="#recensioni" class="block py-2 text-zinc-300">Recensioni</a></li>
+                <li><a href="#contatti" class="block py-2 text-zinc-300">Contatti</a></li>
                 <li>
                     <a href="https://luckystardiscopub.it" target="_blank" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-full">
                         Vedi Menu
@@ -97,10 +95,12 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative pt-32 pb-20 md:pt-48 md:pb-32 flex flex-col items-center justify-center text-center px-6 bg-cyber overflow-hidden">
+        <!-- Glow accents -->
         <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] -z-10"></div>
         <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px] -z-10"></div>
         
-        <div class="mb-6 inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
+        <!-- Badge -->
+        <div class="mb-6 inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm shadow-purple-500/20 glow-purple">
             <span class="flex h-2 w-2 rounded-full bg-purple-500 animate-ping"></span>
             <span class="text-xs font-bold uppercase tracking-widest text-purple-400">✨ Locale Completamente Rinnovato</span>
         </div>
@@ -116,82 +116,58 @@
         </p>
 
         <div class="flex flex-col md:flex-row gap-4">
-                <a href="#contatti" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-fuchsia-600 font-bold uppercase tracking-widest rounded-lg hover:scale-105 transition-all shadow-purple-500/50 glow-fuchsia inline-block text-center">
-                    <i class="fas fa-glass-cheers mr-2"></i>Prenota una Sala Privata
-                </a>
-                <a href="https://luckystardiscopub.it" target="_blank" class="px-8 py-4 border border-zinc-700 hover:bg-white hover:text-black font-bold uppercase tracking-widest rounded-lg transition-all text-center">
-                    <i class="fas fa-utensils mr-2"></i>Sfoglia il Menu
-                </a>
-            </div>
+            <button class="px-8 py-4 bg-gradient-to-r from-purple-600 to-fuchsia-600 font-bold uppercase tracking-widest rounded-lg hover:scale-105 transition-all shadow-purple-500/50 glow-fuchsia">
+                Prenota una Sala Privata
+            </button>
+            <a href="https://luckystardiscopub.it" target="_blank" class="px-8 py-4 border border-zinc-700 hover:bg-white hover:text-black font-bold uppercase tracking-widest rounded-lg transition-all">
+                Sfoglia il Menu
+            </a>
+        </div>
     </section>
 
-    <!-- Features Grid con immagini -->
-    <section id="chi-siamo" class="py-24 bg-zinc-950">
+    <!-- Features Grid -->
+    <section id="servizi" class="py-24 bg-zinc-950">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-orbitron font-bold text-center mb-4 uppercase tracking-tighter">
-                I Nostri <span class="text-purple-500">Punti di Forza</span>
-            </h2>
-            <p class="text-zinc-500 text-center max-w-xl mx-auto mb-16">Scopri cosa rende Lucky Star il locale preferito dai milanesi</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Card 1 -->
-                <div class="rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 overflow-hidden group hover:border-purple-500/50 transition-all duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop" alt="Karaoke" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-purple-500/50 transition-colors group">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-purple-500/10 flex items-center justify-center text-2xl text-purple-500 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-microphone"></i>
                     </div>
-                    <div class="p-6">
-                        <div class="w-12 h-12 mb-4 rounded-xl bg-purple-500/10 flex items-center justify-center text-xl text-purple-500">
-                            <i class="fas fa-microphone"></i>
-                        </div>
-                        <h3 class="text-lg font-orbitron font-bold mb-2 uppercase tracking-tighter">Impianto Audio Top</h3>
-                        <p class="text-zinc-500 text-sm leading-relaxed">
-                            Sperimenta il karaoke con un impianto audio professionale da concerto. Ogni nota risuona con chiarezza cristallina e potenza pura.
-                        </p>
-                    </div>
+                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Impianto Audio Top</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Sperimenta il karaoke con un impianto audio professionale da concerto. Ogni nota risuona con chiarezza cristallina e potenza pura.
+                    </p>
                 </div>
                 <!-- Card 2 -->
-                <div class="rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 overflow-hidden group hover:border-fuchsia-500/50 transition-all duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&h=400&fit=crop" alt="Talento" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-fuchsia-500/50 transition-colors group">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-fuchsia-500/10 flex items-center justify-center text-2xl text-fuchsia-500 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-trophy"></i>
                     </div>
-                    <div class="p-6">
-                        <div class="w-12 h-12 mb-4 rounded-xl bg-fuchsia-500/10 flex items-center justify-center text-xl text-fuchsia-500">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3 class="text-lg font-orbitron font-bold mb-2 uppercase tracking-tighter">Lucky Star Factory</h3>
-                        <p class="text-zinc-500 text-sm leading-relaxed">
-                            Partecipa al nostro talent-show canoro annuale. Mostra il tuo talento a Milano e vinci fantastici premi sotto i riflettori.
-                        </p>
-                    </div>
+                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Lucky Star Factory</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Il nostro talent-show canoro annuale. Mostra il tuo talento sotto i riflettori di Milano e vinci fantastici premi.
+                    </p>
                 </div>
                 <!-- Card 3 -->
-                <div class="rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 overflow-hidden group hover:border-cyan-500/50 transition-all duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&h=400&fit=crop" alt="Cocktail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-cyan-500/50 transition-colors group">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-cyan-500/10 flex items-center justify-center text-2xl text-cyan-500 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-cocktail"></i>
                     </div>
-                    <div class="p-6">
-                        <div class="w-12 h-12 mb-4 rounded-xl bg-cyan-500/10 flex items-center justify-center text-xl text-cyan-500">
-                            <i class="fas fa-cocktail"></i>
-                        </div>
-                        <h3 class="text-lg font-orbitron font-bold mb-2 uppercase tracking-tighter">Drink di Alta Qualità</h3>
-                        <p class="text-zinc-500 text-sm leading-relaxed">
-                            Cocktail premium preparati dai nostri mixologist. Qualità superiore a prezzi accessibili per rinfrescare le tue serate (10-20€).
-                        </p>
-                    </div>
+                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Drink di Alta Qualità</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Cocktail premium preparati dai nostri mixologist. Qualità superiore a prezzi accessibili (10-20€) per le tue notti milanesi.
+                    </p>
                 </div>
                 <!-- Card 4 -->
-                <div class="rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 overflow-hidden group hover:border-zinc-500 transition-all duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=600&h=400&fit=crop" alt="Relax" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-white/20 transition-colors group">
+                    <div class="w-14 h-14 mb-6 rounded-xl bg-zinc-500/10 flex items-center justify-center text-2xl text-zinc-400 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-couch"></i>
                     </div>
-                    <div class="p-6">
-                        <div class="w-12 h-12 mb-4 rounded-xl bg-zinc-500/10 flex items-center justify-center text-xl text-zinc-400">
-                            <i class="fas fa-couch"></i>
-                        </div>
-                        <h3 class="text-lg font-orbitron font-bold mb-2 uppercase tracking-tighter">Sale Private & Relax</h3>
-                        <p class="text-zinc-500 text-sm leading-relaxed">
-                            Ampio patio esterno, comodi divanetti e salette private per festeggiare i tuoi eventi speciali in totale privacy e comfort.
-                        </p>
-                    </div>
+                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Sale Private & Relax</h3>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Ampio patio esterno, comodi divanetti e salette private per festeggiare in totale privacy e massimo comfort.
+                    </p>
                 </div>
             </div>
         </div>
@@ -210,7 +186,7 @@
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <p class="text-zinc-300 italic mb-6">
-                        "La Lucky Star Factory è un'esperienza pazzesca! Ho partecipato alla gara canora e l'atmosfera era elettrizzante. Staff gentilissimo!"
+                        "Locale pazzesco! Ho partecipato alla gara Lucky Star Factory e l'organizzazione è stata impeccabile. Il karaoke migliore di Milano!"
                     </p>
                     <div class="font-bold font-orbitron text-purple-400">— Francesca C.</div>
                 </div>
@@ -220,7 +196,7 @@
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <p class="text-zinc-300 italic mb-6">
-                        "Locale rinnovato stupendo! Abbiamo prenotato una sala privata per un compleanno e ci siamo divertiti tantissimo. I drink sono ottimi."
+                        "Il locale è stato rinnovato ed è bellissimo. Abbiamo prenotato una delle sale private per una festa e ci siamo trovati da dio."
                     </p>
                     <div class="font-bold font-orbitron text-fuchsia-400">— Gaia R.</div>
                 </div>
@@ -230,7 +206,7 @@
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <p class="text-zinc-300 italic mb-6">
-                        "L'impianto karaoke è il migliore che abbia mai provato. Luci LED pazzesche e le sale private offrono la giusta intimità. Consigliatissimo!"
+                        "L'impianto karaoke è qualcosa di serio. Luci LED ovunque e le sale private sono perfette per stare con gli amici. Consigliatissimo!"
                     </p>
                     <div class="font-bold font-orbitron text-cyan-400">— Sara V.</div>
                 </div>
@@ -249,7 +225,7 @@
                         Via Pellegrino Rossi, 93<br>
                         20161 Milano MI
                     </p>
-                    <p class="text-xs text-purple-500 font-bold uppercase tracking-widest">
+                    <p class="text-xs text-purple-500 font-bold uppercase tracking-widest mt-4">
                         <i class="fas fa-parking mr-2"></i> Parcheggio in strada gratuito
                     </p>
                 </div>
@@ -265,7 +241,7 @@
                 <!-- Col 3 -->
                 <div>
                     <h4 class="text-lg font-orbitron font-bold text-white mb-6 uppercase tracking-wider">Prenotazioni</h4>
-                    <p class="text-zinc-500 text-sm mb-6">Contattaci per riservare il tuo tavolo o una delle nostre esclusive sale private.</p>
+                    <p class="text-zinc-500 text-sm mb-6">Contattaci per riservare una delle nostre esclusive sale private per i tuoi eventi.</p>
                     <a href="tel:3482613029" class="text-2xl font-bold font-orbitron text-fuchsia-500 hover:text-fuchsia-400 transition-colors">
                         348 261 3029
                     </a>
@@ -310,11 +286,14 @@
                 const href = this.getAttribute('href');
                 if (href !== '#') {
                     e.preventDefault();
-                    document.querySelector(href).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                    // Close mobile menu
-                    mobileMenu.classList.add('hidden');
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                        // Close mobile menu
+                        mobileMenu.classList.add('hidden');
+                    }
                 }
             });
         });
