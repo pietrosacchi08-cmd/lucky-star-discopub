@@ -45,7 +45,9 @@
         .bg-cyber {
             background-image: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
                               linear-gradient(rgba(9, 9, 11, 0.8), rgba(9, 9, 11, 0.8)),
-                              url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+                              url('https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
@@ -116,11 +118,11 @@
         </p>
 
         <div class="flex flex-col md:flex-row gap-4">
-            <button class="px-8 py-4 bg-gradient-to-r from-purple-600 to-fuchsia-600 font-bold uppercase tracking-widest rounded-lg hover:scale-105 transition-all shadow-purple-500/50 glow-fuchsia">
-                Prenota una Sala Privata
-            </button>
-            <a href="https://luckystardiscopub.it" target="_blank" class="px-8 py-4 border border-zinc-700 hover:bg-white hover:text-black font-bold uppercase tracking-widest rounded-lg transition-all">
-                Sfoglia il Menu
+            <a href="#contatti" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-fuchsia-600 font-bold uppercase tracking-widest rounded-lg hover:scale-105 transition-all shadow-purple-500/50 glow-fuchsia inline-block text-center">
+                <i class="fas fa-glass-cheers mr-2"></i>Prenota una Sala Privata
+            </a>
+            <a href="https://luckystardiscopub.it" target="_blank" class="px-8 py-4 border border-zinc-700 hover:bg-white hover:text-black font-bold uppercase tracking-widest rounded-lg transition-all text-center">
+                <i class="fas fa-utensils mr-2"></i>Sfoglia il Menu
             </a>
         </div>
     </section>
@@ -128,46 +130,70 @@
     <!-- Features Grid -->
     <section id="servizi" class="py-24 bg-zinc-950">
         <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-orbitron font-bold text-center mb-4 uppercase tracking-tighter">
+                I Nostri <span class="text-purple-500">Punti di Forza</span>
+            </h2>
+            <p class="text-zinc-500 text-center max-w-xl mx-auto mb-16">Scopri cosa rende Lucky Star il locale preferito dai milanesi</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Card 1 -->
-                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-purple-500/50 transition-colors group">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-purple-500/10 flex items-center justify-center text-2xl text-purple-500 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-microphone"></i>
+                <div class="rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 overflow-hidden group hover:border-purple-500/50 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop" alt="Karaoke" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
-                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Impianto Audio Top</h3>
-                    <p class="text-zinc-500 text-sm leading-relaxed">
-                        Sperimenta il karaoke con un impianto audio professionale da concerto. Ogni nota risuona con chiarezza cristallina e potenza pura.
-                    </p>
+                    <div class="p-6">
+                        <div class="w-12 h-12 mb-4 rounded-xl bg-purple-500/10 flex items-center justify-center text-xl text-purple-500">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3 class="text-lg font-orbitron font-bold mb-2 uppercase tracking-tighter">Impianto Audio Top</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">
+                            Sperimenta il karaoke con un impianto audio professionale da concerto. Ogni nota risuona con chiarezza cristallina.
+                        </p>
+                    </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-fuchsia-500/50 transition-colors group">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-fuchsia-500/10 flex items-center justify-center text-2xl text-fuchsia-500 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-trophy"></i>
+                <div class="rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 overflow-hidden group hover:border-fuchsia-500/50 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&h=400&fit=crop" alt="Talento" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
-                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Lucky Star Factory</h3>
-                    <p class="text-zinc-500 text-sm leading-relaxed">
-                        Il nostro talent-show canoro annuale. Mostra il tuo talento sotto i riflettori di Milano e vinci fantastici premi.
-                    </p>
+                    <div class="p-6">
+                        <div class="w-12 h-12 mb-4 rounded-xl bg-fuchsia-500/10 flex items-center justify-center text-xl text-fuchsia-500">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="text-lg font-orbitron font-bold mb-2 uppercase tracking-tighter">Lucky Star Factory</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">
+                            Il nostro talent-show canoro annuale. Mostra il tuo talento sotto i riflettori di Milano e vinci fantastici premi.
+                        </p>
+                    </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-cyan-500/50 transition-colors group">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-cyan-500/10 flex items-center justify-center text-2xl text-cyan-500 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-cocktail"></i>
+                <div class="rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 overflow-hidden group hover:border-cyan-500/50 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&h=400&fit=crop" alt="Cocktail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
-                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Drink di Alta Qualità</h3>
-                    <p class="text-zinc-500 text-sm leading-relaxed">
-                        Cocktail premium preparati dai nostri mixologist. Qualità superiore a prezzi accessibili (10-20€) per le tue notti milanesi.
-                    </p>
+                    <div class="p-6">
+                        <div class="w-12 h-12 mb-4 rounded-xl bg-cyan-500/10 flex items-center justify-center text-xl text-cyan-500">
+                            <i class="fas fa-cocktail"></i>
+                        </div>
+                        <h3 class="text-lg font-orbitron font-bold mb-2 uppercase tracking-tighter">Drink di Alta Qualità</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">
+                            Cocktail premium preparati dai nostri mixologist. Qualità superiore a prezzi accessibili (10-20€) per le tue notti milanesi.
+                        </p>
+                    </div>
                 </div>
                 <!-- Card 4 -->
-                <div class="p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 hover:border-white/20 transition-colors group">
-                    <div class="w-14 h-14 mb-6 rounded-xl bg-zinc-500/10 flex items-center justify-center text-2xl text-zinc-400 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-couch"></i>
+                <div class="rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 overflow-hidden group hover:border-white/20 transition-all duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=600&h=400&fit=crop" alt="Relax" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                     </div>
-                    <h3 class="text-xl font-orbitron font-bold mb-4 uppercase tracking-tighter">Sale Private & Relax</h3>
-                    <p class="text-zinc-500 text-sm leading-relaxed">
-                        Ampio patio esterno, comodi divanetti e salette private per festeggiare in totale privacy e massimo comfort.
-                    </p>
+                    <div class="p-6">
+                        <div class="w-12 h-12 mb-4 rounded-xl bg-zinc-500/10 flex items-center justify-center text-xl text-zinc-400">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h3 class="text-lg font-orbitron font-bold mb-2 uppercase tracking-tighter">Sale Private & Relax</h3>
+                        <p class="text-zinc-500 text-sm leading-relaxed">
+                            Ampio patio esterno, comodi divanetti e salette private per festeggiare in totale privacy e massimo comfort.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
